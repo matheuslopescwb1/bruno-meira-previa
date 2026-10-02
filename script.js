@@ -2,7 +2,7 @@
 // Com um número em "whatsapp" (só dígitos, com 55 e DDD), o formulário abre o WhatsApp
 // com a mensagem pronta. Sem número, copia o texto e leva pro direct do Instagram.
 const CONFIG = {
-  whatsapp: '',
+  whatsapp: '5541996580148',
   instagram: 'brunomeirab_',
 };
 
