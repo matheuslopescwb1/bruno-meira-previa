@@ -629,7 +629,7 @@ ul, ol { list-style: none; }
 .convite__grade { display: grid; gap: clamp(32px, 5vw, 64px); }
 .convite__lado { display: grid; align-content: start; gap: 20px; }
 /* título menor que nas outras seções: a coluna é estreita e a última linha é longa */
-.convite .titulo { font-size: clamp(56px, 8.200vw, 120px); }
+.convite .titulo { font-size: clamp(56px, 8.200vw, 120px); line-height: .96; }
 .convite__apoio { max-width: 30em; }
 .convite__foto {
   margin-top: 12px;
