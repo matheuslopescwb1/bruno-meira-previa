@@ -23,32 +23,36 @@
 
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
+<!-- barra de leitura, preenchida pelo movimento.js -->
+<div class="progresso" aria-hidden="true"></div>
+
+<!-- Menu fixo: fica fora da abertura pra passar por cima das outras seções -->
+<nav class="nav" aria-label="Principal">
+  <a class="marca" href="#topo" aria-label="Bruno Meira, início">
+    <!-- Símbolo provisório (livro aberto). Trocar quando o logo for definido. -->
+    <svg class="marca__simbolo" viewBox="0 0 40 48" aria-hidden="true">
+      <rect x="1.5" y="1.5" width="37" height="45" rx="18.5" fill="none" stroke="currentColor" stroke-width="3"/>
+      <path d="M10 18c3.6-1.2 6.8-.8 10 1.6 3.2-2.4 6.400-2.800 10-1.600v12c-3.600-1.200-6.800-.8-10 1.600-3.200-2.400-6.400-2.800-10-1.600z" fill="currentColor"/>
+    </svg>
+    <span class="marca__nome">Bruno Meira</span>
+  </a>
+  <ul class="nav__links">
+    <li><a href="#trajetoria">História</a></li>
+    <li><a href="#creio">Em que acredito</a></li>
+    <li><a href="#ministerio">Onde sirvo</a></li>
+  </ul>
+  <a class="botao botao--claro botao--p" href="#convite">Convidar</a>
+</nav>
+
 <!-- ============ ABERTURA ============ -->
 <header class="abertura" id="topo">
   <div class="padrao" aria-hidden="true"></div>
   <img class="abertura__foto" src="assets/bruno-02-pregando-perfil.jpg" alt="Bruno Meira de perfil, pregando com o microfone na mão">
   <div class="grao" aria-hidden="true"></div>
 
-  <nav class="nav" aria-label="Principal">
-    <a class="marca" href="#topo" aria-label="Bruno Meira, início">
-      <!-- Símbolo provisório (livro aberto). Trocar quando o logo for definido. -->
-      <svg class="marca__simbolo" viewBox="0 0 40 48" aria-hidden="true">
-        <rect x="1.5" y="1.5" width="37" height="45" rx="18.5" fill="none" stroke="currentColor" stroke-width="3"/>
-        <path d="M10 18c3.6-1.2 6.8-.8 10 1.6 3.2-2.4 6.400-2.800 10-1.600v12c-3.600-1.200-6.800-.8-10 1.600-3.200-2.400-6.400-2.800-10-1.600z" fill="currentColor"/>
-      </svg>
-      <span class="marca__nome">Bruno Meira</span>
-    </a>
-    <ul class="nav__links">
-      <li><a href="#trajetoria">História</a></li>
-      <li><a href="#creio">Em que acredito</a></li>
-      <li><a href="#ministerio">Onde sirvo</a></li>
-    </ul>
-    <a class="botao botao--claro botao--p" href="#convite">Convidar</a>
-  </nav>
-
   <div class="abertura__texto">
     <p class="sobretitulo">Evangelista · Curitiba</p>
-    <h1 class="abertura__nome">Bruno<br>Meira</h1>
+    <h1 class="abertura__nome"><span class="abertura__linha">Bruno</span> <span class="abertura__linha">Meira</span></h1>
     <p class="abertura__frase">
       Alguém apaixonado por
       <span class="rabisco">Jesus.
@@ -293,11 +297,11 @@
     <p class="sobretitulo">Alcance</p>
     <dl class="numeros">
       <div>
-        <dt>+100 mil</dt>
+        <dt data-conta="100">+100 mil</dt>
         <dd>pessoas ouviram o evangelho nas escolas, com o projeto Awake</dd>
       </div>
       <div>
-        <dt>20 mil</dt>
+        <dt data-conta="20">20 mil</dt>
         <dd>almas</dd>
       </div>
       <div>
@@ -388,5 +392,6 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="movimento.js"></script>
 </body>
 </html>
